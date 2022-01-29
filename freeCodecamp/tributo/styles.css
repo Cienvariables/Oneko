@@ -1,495 +1,90 @@
-.header {
-    min-height: 80px;
-    background-color: rgb(58, 47, 47);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
 
-
-.header-logo {
-    max-height: 80px;
-    margin: 1% 1%;
+body {
+  background-color: rgb(238, 237, 240);
+  border: 2vw solid rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-900 {
-    max-width: 900px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 auto;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header-links {
-    margin: 0;
-    list-style: none;
-
-    display: flex;
-    flex-direction:row;
+.sentence {
+  font-size: 0.8em;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding: 1vw;
 }
 
-.header-links-item {
-
-    margin: 0 10px;
-    font-size: 16px;
-    color:white;
-    list-style: none;
-    text-decoration:none;
+#title {
+  margin: 1em 0 0;
+  font-size: 4vw;
 }
 
-.header-links-item1 {
-
-    margin: 0px 10px;
-    font-size: 16px;
-    color:white;
-    text-decoration-color: rgb(138, 98, 80);
+h2 {
+  margin: 2em 13em;
+  font-size: 2vw;
 }
 
-.header-links-item2 {
-    margin: 0px 10px;
-    font-size: 16px;
-    color:white;
-    text-decoration-color: rgb(138, 98, 80);
+.main {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-    /* background-contenedor de imagen */
-
-.article {
-    height: 500px;
-    width: 100%;
+#img-div {
+  /* width: 98%; */
+  max-width: 100%;
+  height: auto;
 }
 
-.background-contenedor {
-    height: 500px;
-    min-width: 100%;
-    background-image: url("./assets/fondoh1.jpg"); /* Imagen de fondo */
-    text-align:center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+#image {
+  max-width: 100%;
+  height: auto;
+  border-width: 1em 1em;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  display: block;
 }
 
-.descubre-h1 {
-    display:inline-block;
-    vertical-align: middle;
-    padding: 50px 0 50px;
-    margin: 95px;
+#img-caption {
+  padding-bottom: 2vw;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
 }
 
- /* caja negra y lechugina */
-
-.section{
-    justify-content: center;
-    display: flex;
-}
- .container{
-    min-height: 200px;  /*Elimina restriccion altura del bloque por si se escribe mas texto  */
-    width: 300px;
-    margin: 100px;
-    padding: 10px 30px;
-    background-color: black;
-    color: blanchedalmond;
-    position: relative;/* padre de la lechuga */
-    text-align: center;
+#tribute-info {
+  padding: 1vw;
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.title1::after{  /* After y Before */
-    content:"";
-    width: 100px;
-    height: 1px;
-    background-color:white;  /* ;border: 2px solid white*/
-    display:flex;
-    align-items:unset;
-    margin: initial;
-    position: relative;
-    top:  -7px;
-    right: -5px;
-}
-.title1::before{  /* After y Before */
-    content:"";
-    width: 100px;
-    height: 1px;
-    background-color:white;  /* ;border: 2px solid white*/
-    display:flex;
-    align-items:unset;
-    margin: initial;
-    position: relative;
-    left:  200px;
-    top: 10px;
+li {
+  margin: 1% 21%;
+  list-style-type: disc;
+  font-size: 0.9rem;
 }
 
-.center{
-    text-align:justify;
-
+.quote {
+  padding: 2vw;
+  margin: 1% 16%;
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.lechuga {
-    max-height: 140px;
-    max-width: 130px;
-    position:absolute; /*hijo la lechuga  */
-    top:  -60px;
-    left: -60px;
+footer {
+  padding: 1vw 4vw;
+  font-size: 0.8rem;
+  align-items: ;
 }
 
-.zumo {
-    max-width: 140px;
-    max-height: 150px;
-    position: absolute; /*hijo la lechuga  */
-    top: -80px;
-    left: 250px;
-}
-/* Div al 33%  */
-.aside {
-    max-width: 100%;
-    background-image: url("./assets/00.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center;
-    flex: 1 0 auto;
-}
-
-.background-contenedor2 {
-
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    flex: 1 1 1;
-    }
-
-.image{
-    padding: auto;
-    margin:10px;
-    text-align: center;
-    width: auto;
-}
-
- /* Carta  */
-
-.background-contenedor3{
- max-width: 900px;
-}
- .image2{
-    display:block;
-    margin:auto;
-    height: 100%;
-    width: 100%;
-}
-
-   /* Carta y botón */
-
-.otracaja {
-    height: 100px;
-    width: 100%;
-    margin:20px;
-    text-align: center;
-}
-
-.boton{
-    text-decoration: none;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 800;
-    font-size: 15px;
-    color:white;
-    background-color: #523a36;
-}
-
-.boton:hover{
-    color: white;
-    background-color: orange;
-    text-decoration: none;
-}
-
-     /* Formulario */
-
-.container-flex{
-        min-width: 100%;
-        height: 400px;
-        margin-top: 70px;
-        padding-top: 20px;
-        background-image:linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url("./assets/back.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: blanchedalmond;
-        text-align:center;
-}
-.title{
-    width: 50px;
-    height: 50px;
-    /* centrar vertical y horizontalmente */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.flex-inline{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:left;
-    justify-items: left;
-    padding: 30px 10px;
-    margin: 10px;
-
-}
-
-.item1{
-display:inline-flex;
-align-items:center;
-flex-basis:300px;
-}
-
-.item2{
-    display: flex;
-    align-items: stretch;
-    flex-basis: content;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: center;
-
-}
-
-.item3{
-    display: flex;
-    align-items: stretch;
-    flex-basis: content;
-    align-content: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 40px;
-    width:100%;
-    padding:10px 0px;
-}
-
-.item4{
-display: flex;
-margin:10px;
-}
-
-.direccion{
-    font-size:10px;
-    padding:5px;
-    margin:5px;
-    justify-content: right;
-}
-
-/* 3 imagenes y el titulo blog*/
-
-
-.blog::after{  /* After y Before */
-    content:"";
-    width: 100px;
-    height: 1px;
-    background-color:white;  /* ;border: 2px solid white*/
-    align-items:center;
-    top:-25px;
-    right:530px;
-}
-
-.blog::before{  /* After y Before */
-    content:"";
-    width:100px;
-    height: 2px;
-    background-color:white;
-    text-align: center;
-    left: 660px;
-    top: -35px;
-}
-
-.color{
-
-    color: rgb(168, 155, 37);
-    font-weight: bolder;
-    font-size: 24px;
-}
-.color2{
-
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* 3 imagenes */
-
-.blog{
-    max-width: 100%;
-    height: 100%;
-    font-size:14px;
-    color:black;
-    text-align:center;
-}
-
-.blog::after{  /* After y Before */
-    content:"";
-    width: 200px;
-    height: 1px;
-    background-color:orange;  /* ;border: 2px solid white*/
-    display:inline-block;
-    margin:5px;
-}
-
-.blog::before{  /* After y Before */
-    content:"";
-    width: 200px;
-    height: 1px;
-    background-color:orange;  /* ;border: 2px solid white*/
-    display:inline-block;
-    margin:5px;
-}
-
-.contenedor-3-imagenes{
-    display:flex;
-    flex-direction: row;
-    align-items:stretch;
-    align-content: center;
-    justify-content:space-evenly;
-}
-
-.images{
-    display:flex;
-    flex-direction: column;
-    align-self: stretch;
-    margin:5px;
-}
-
-    /*Boton */
-
-.containerbutton2{
-        font-size: 16px;
-        text-align: center;
-        display:block;
-        margin:20px;
-}
-
-.button2{
-
-    background-color: darkorange;
-    font-size: 16px;
-    text-align: center;
-    border-bottom:none;
-    margin:20px;
-    padding: 5px 25px;
-    color:ivory;
-    border: none;
-}
-    /* direcciones */
-
-.header-logo2{
-    width: 150px;
-    height: 100px;
-    padding: 50px 0px 0px 0px;
-    text-align: center;
-}
-
-.background-contenedor {
-    height: 400px;
-    min-width: 100%;
-    background-image: url("./assets/03.jpg"); /* Imagen de fondo */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.ven{
-    padding: 10px;
-    margin: 30px;
-    font-size:18px;
-    color:rgb(0, 0, 0);
-    text-align:center;
-}
-
-.fa{
-    margin: 5px 10px;
-    width: 10px;
-    display: inline-flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content: center;
-    align-content: center;
-}
-
-.fa-item:nth-child(1){
-    margin: 10px 70px;
-    display:flex;
-    flex-wrap: nowrap;
-}
-
-.fa-item:nth-child(2){
-    margin: 10px 50px;
-    align-self: flex-start;
-}
-
-.fa-item:nth-child(3){
-    margin: 10px 50px;
-    align-self: flex-start;
-}
-
-    /*Footer  */
-
-.footer{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.botones{
-    width: 100px;
-    margin: 20px 50px;
-    padding:10px;
-    border:solid black 2px;
-
-}
-
-.botones--a{
-    text-decoration: none;
-    font-size: 14px;
-    color:black
-}
-
-.info{
-background-color: rgb(230, 218, 218);
-width: 100%;
-height: 100px;
-padding:20px;
-text-align: center;
-display:flex;
-flex-wrap: wrap;
-flex-direction: row;
-align-content: center;
-justify-content: center;
-
-}
-
-.list{
-    list-style:none;
-    text-decoration-line:none;
-    margin:10px 10px;
-    padding:10px;
-}
-.info--footer{
-    margin:0 10px;
-    padding:1px;
-}
-
-.infofooter--1{
-    margin:10px 10px;
-    padding:10px;
-    text-decoration: none;
-    list-style:none;
-}
-    /* Y esto es todo amigos */
+/* Y esto es todo amigos */
