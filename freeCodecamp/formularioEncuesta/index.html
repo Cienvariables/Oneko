@@ -2,17 +2,86 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CodePen - FCC: Survey Form</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Formulario</title>
 </head>
 
 <body>
+  <header>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Gracias por tomarte tiempo para ayudarnos a mejorar la plataforma.</p>
+  </header>
+
+  <main id="main">
+    <form id="survey-form" method="post" action="/nombre">
+      <div class="img-div">
+        <label id="name-label" for="name-label">Nombre</label>
+        <input id="name" type="text" name="name-label" placeholder="Escribe tu nombre" required>
+
+        <label id="email-label" for="email-label">Correo</label>
+        <input id="email" type="email" name="email-label" pattern=".+\.com" placeholder="Escribe tu correo" required>
+
+        <label id="number-label" for="number-label">Edad (Opcional)</label>
+        <input id="number" type="number" name="number-label" placeholder="Escribe tu edad" min="14" max="99">
+
+        <label id="role" for="role">¿Que opcion describe mejor tu situacion actual?</label>
+
+        <select class="label-input" name="combo">
+          <option value="1">Estudiante</option>
+          <option value="2">Trabajador a tiempo completo</option>
+          <option value="3">Trabajador a media jornada</option>
+          <option value="4">Prefiero no decirlo</option>
+          <option value="5">Otras</option>
+        </select>
+
+        <label class="left">¿Recomendarías freeCodeCamp a un amigo?</label>
+        <label><input type="radio" name="1-radio">Por supuesto</label>
+        <label><input type="radio" name="2-radio">Quizas</label>
+        <label><input type="radio" name="3-radio">No lo sé</label>
+
+        <label id="favorite" for="favorite">¿Cuál es tu función favorita de freeCodeCamp?</label>
+        <select id="dropdown" name="combo-new">
+          <option value="1">Canales</option>
+          <option value="2">Proyectos</option>
+          <option value="3">Comunidad</option>
+          <option value="4">Open Source</option>
+        </select>
+
+
+        <label id="checkbox" for="checkbox">¿Qué te gustaría ver mejorado? (Marca todo lo que
+          corresponda)</label>
+        <label><input type="checkbox" name="in" value="10">Proyectos Front-end</label>
+        <label><input type="checkbox" name="in" value="11">Proyectos Back-end</label>
+        <label><input type="checkbox" name="in" value="12">Visualizacion de datos</label>
+        <label><input type="checkbox" name="in" value="13">Desafios</label>
+        <label><input type="checkbox" name="in" value="14">Comunidad de Open Source</label>
+        <label><input type="checkbox" name="in" value="15">Salas de ayuda</label>
+        <label><input type="checkbox" name="in" value="16">Videos</label>
+        <label><input type="checkbox" name="in" value="17">Quedadas</label>
+        <label><input type="checkbox" name="in" value="18">Wiki</label>
+        <label><input type="checkbox" name="in" value="19">Foros</label>
+        <label><input type="checkbox" name="in" value="20">Otros Motivos</label>
+
+        <p>¿Algún comentario o sugerencia?</p>
+
+        <label name="formulario" method="post" action="#"></label>
+        <textarea class="textarea" name="texto" cols="80" rows="10">
+                  Escribe aquí tu comentario...</textarea>
+
+        <button id="submit" type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+
+
+  </footer>
 
 </body>
+
 
 </html>
