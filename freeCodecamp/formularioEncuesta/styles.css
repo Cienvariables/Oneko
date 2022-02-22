@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -16,75 +16,77 @@ body {
 #title {
   text-align: center;
   font-family: "Oswald", sans-serif;
-  color: #091711;
-}
-
-header {
-  margin: 1vw;
 }
 
 main {
-  display: flex;
-  justify-content: center;
   width: 60%;
+  font-size: 0.9em;
+  font-size: x-large;
+  font-weight: 600;
+  background: conic-gradient(#f69d3c, #3f87a6);
 }
 
 body {
   font-family: "Oswald", sans-serif;
 }
 
-label {
-  padding-top: 0.5em;
-  font-size: x-large;
-  font-weight: 600;
-}
-input,
 select {
   margin: 0.5em 1em;
-  font-size: 1rem;
   display: block;
+  width: 40%;
 }
+
+/* p {
+  align-items: ;
+} */
 
 #title {
   font-size: 3rem;
   padding: 3vw;
-  color: rgb(19, 18, 18);
 }
 
 #description {
-  font-size: 1rem;
+  font-size: larger;
   padding: 1vw;
-  color: rgb(71, 55, 55);
+  font-weight: 600;
   text-align: center;
 }
 
-#main {
-  font-size: 1rem;
-  background: conic-gradient(#f69d3c, #3f87a6);
+.survey-divs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100vw;
+  min-height: 25vh;
+  border: #e21212 solid 0.1em;
 }
 
 .img-div {
-  display: flex;
-  flex-direction: column;
+  margin: 1em;
+  border: #000000 solid 0.1em;
 }
 
-label {
-  margin: 0.1em 1em;
-  font-size: 1rem;
+.img-div-2 {
+  margin: 1.5em;
+  border: #000000 solid 0.1em;
 }
 
-.left {
-  margin: 0.7em 1em;
+/* Porque a esto si le añado un margin a los lados no se ve diferencia . margin: 1em 1em */
+#name-label {
+  margin: 1em;
 }
 
-.right {
-  margin: -0.5em --0.8em;
+#email-label {
+  margin: 1em;
 }
 
-.label-input {
-  margin: 0.8em 0.9em;
-  font-size: 1rem;
-  display: block;
+#number-label {
+  margin: 1em;
+}
+
+.items__checkbox {
+  margin: 0.4;
+  border: 1em #dbe91e solid;
 }
 
 .textarea {

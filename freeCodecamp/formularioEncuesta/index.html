@@ -16,62 +16,78 @@
   </header>
 
   <main id="main">
+
     <form id="survey-form" method="post" action="/nombre">
-      <div class="img-div">
-        <label id="name-label" for="name-label">Nombre</label>
-        <input id="name" type="text" name="name-label" placeholder="Escribe tu nombre" required>
+      <div class="survey-divs">
+        <div class="img-div">
+          <label id="name-label" for="name-label">Nombre</label>
+          <input id="name" type="text" name="name-label" placeholder="Escribe tu nombre" required>
 
-        <label id="email-label" for="email-label">Correo</label>
-        <input id="email" type="email" name="email-label" pattern=".+\.com" placeholder="Escribe tu correo" required>
+          <label id="email-label" for="email-label">Correo</label>
+          <input id="email" type="email" name="email-label" pattern=".+\.com" placeholder="Escribe tu correo" required>
 
-        <label id="number-label" for="number-label">Edad (Opcional)</label>
-        <input id="number" type="number" name="number-label" placeholder="Escribe tu edad" min="14" max="99">
+          <label id="number-label" for="number-label">Edad (Opcional)</label>
+          <input id="number" type="number" name="number-label" placeholder="Escribe tu edad" min="14" max="99">
+        </div>
 
-        <label id="role" for="role">¿Que opcion describe mejor tu situacion actual?</label>
+        <div class="img-div-2">
+          <label for="role" id="role">¿Que opcion describe mejor tu situacion actual?</label>
+          <select name="combo">
+            <option value="1">Estudiante</option>
+            <option value="2">Trabajador a tiempo completo</option>
+            <option value="3">Trabajador a media jornada</option>
+            <option value="4">Prefiero no decirlo</option>
+            <option value="5">Otras</option>
+          </select>
 
-        <select class="label-input" name="combo">
-          <option value="1">Estudiante</option>
-          <option value="2">Trabajador a tiempo completo</option>
-          <option value="3">Trabajador a media jornada</option>
-          <option value="4">Prefiero no decirlo</option>
-          <option value="5">Otras</option>
-        </select>
+          <label id="favorite" for="favorite">¿Cuál es tu función favorita de freeCodeCamp?</label>
+          <select id="dropdown" name="combo-new">
+            <option value="1">Canales</option>
+            <option value="2">Proyectos</option>
+            <option value="3">Comunidad</option>
+            <option value="4">Open Source</option>
+          </select>
 
-        <label class="left">¿Recomendarías freeCodeCamp a un amigo?</label>
-        <label><input type="radio" name="1-radio">Por supuesto</label>
-        <label><input type="radio" name="2-radio">Quizas</label>
-        <label><input type="radio" name="3-radio">No lo sé</label>
+        </div>
+      </div>
 
-        <label id="favorite" for="favorite">¿Cuál es tu función favorita de freeCodeCamp?</label>
-        <select id="dropdown" name="combo-new">
-          <option value="1">Canales</option>
-          <option value="2">Proyectos</option>
-          <option value="3">Comunidad</option>
-          <option value="4">Open Source</option>
-        </select>
+      <div class="items">
+        <div class="items__radio">
+          <label>¿Recomendarías freeCodeCamp a un amigo?</label>
+          <label><input type="radio" name="1-radio">Por supuesto</label>
+          <label><input type="radio" name="2-radio">Quizas</label>
+          <label><input type="radio" name="3-radio">No lo sé</label>
+        </div>
 
 
-        <label id="checkbox" for="checkbox">¿Qué te gustaría ver mejorado? (Marca todo lo que
-          corresponda)</label>
-        <label><input type="checkbox" name="in" value="10">Proyectos Front-end</label>
-        <label><input type="checkbox" name="in" value="11">Proyectos Back-end</label>
-        <label><input type="checkbox" name="in" value="12">Visualizacion de datos</label>
-        <label><input type="checkbox" name="in" value="13">Desafios</label>
-        <label><input type="checkbox" name="in" value="14">Comunidad de Open Source</label>
-        <label><input type="checkbox" name="in" value="15">Salas de ayuda</label>
-        <label><input type="checkbox" name="in" value="16">Videos</label>
-        <label><input type="checkbox" name="in" value="17">Quedadas</label>
-        <label><input type="checkbox" name="in" value="18">Wiki</label>
-        <label><input type="checkbox" name="in" value="19">Foros</label>
-        <label><input type="checkbox" name="in" value="20">Otros Motivos</label>
+        <div class="items__checkbox">
 
-        <p>¿Algún comentario o sugerencia?</p>
+          <label id="checkbox" for="checkbox">¿Qué te gustaría ver mejorado? (Marca todo lo que
+            corresponda)</label>
+          <label><input type="checkbox" name="in" value="10">Proyectos Front-end</label>
+          <label><input type="checkbox" name="in" value="11">Proyectos Back-end</label>
+          <label><input type="checkbox" name="in" value="12">Visualizacion de datos</label>
+          <label><input type="checkbox" name="in" value="13">Desafios</label>
+          <label><input type="checkbox" name="in" value="14">Open Source</label>
+          <label><input type="checkbox" name="in" value="15">Salas de ayuda</label>
+          <label><input type="checkbox" name="in" value="16">Videos</label>
+          <label><input type="checkbox" name="in" value="17">Quedadas</label>
+          <label><input type="checkbox" name="in" value="18">Wiki</label>
+          <label><input type="checkbox" name="in" value="19">Foros</label>
+          <label><input type="checkbox" name="in" value="20">Otros Motivos</label>
+        </div>
+      </div>
 
-        <label name="formulario" method="post" action="#"></label>
-        <textarea class="textarea" name="texto" cols="80" rows="10">
+
+
+      </div>
+      <p>¿Algún comentario o sugerencia?</p>
+
+      <label name="formulario" method="post" action="#"></label>
+      <textarea class="textarea" name="texto" cols="80" rows="10">
                   Escribe aquí tu comentario...</textarea>
 
-        <button id="submit" type="submit">Enviar</button>
+      <button id="submit" type="submit">Enviar</button>
       </div>
     </form>
   </main>
